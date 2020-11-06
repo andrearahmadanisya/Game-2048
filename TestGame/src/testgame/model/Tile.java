@@ -7,7 +7,7 @@ package testgame.model;
 
 /**
  *
- * @author Atta
+ * @author Andrea Rahmadanisya
  */
 public class Tile {
     private int value;
