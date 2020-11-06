@@ -22,7 +22,7 @@ import testgame.view.BoardUI;
 
 /**
  *
- * @author Atta
+ * @author Andrea Rahmadanisya
  */
 public class BoardController {
     
@@ -94,8 +94,6 @@ public class BoardController {
 
             tile[tileRow][tileCol].setValue(2);
         }
-        
-//        updateBoard();
     }
     
     private void generateSample() {
@@ -103,16 +101,6 @@ public class BoardController {
         this.tile[0][1].setValue(4);
         this.tile[0][2].setValue(4);
         this.tile[0][3].setValue(4);
-//        this.tile[1][2].setValue(4);
-//        this.tile[2][1].setValue(4);
-        
-//        for(int i=0; i<4; i++) {
-//            for (int j=0; j<4; j++) {
-//                System.out.print(boardModel.getOneTile(i, j).getValue() + " ");
-//            }
-//            System.out.println();
-//        }
-        
         updateBoard();
     }
     
@@ -237,90 +225,5 @@ public class BoardController {
             boardView.setBest(boardModel.getBest());
         }
     }
-
-    
-    class MovementListener implements KeyListener {
-
-        @Override
-        public void keyTyped(KeyEvent e) {
-            
-        }
-
-        @Override
-        public void keyPressed(KeyEvent e) {
-            int keyCode = e.getKeyCode();
-            switch(keyCode) {
-                case KeyEvent.VK_UP:
-                    //System.out.println("up");
-                    moveUp();
-                    break;
-                case KeyEvent.VK_DOWN:
-                    //System.out.println("down");
-                    moveDown();
-                    break;
-                case KeyEvent.VK_LEFT:
-                    //System.out.println("left");
-                    moveLeft();
-                    break;
-                case KeyEvent.VK_RIGHT:
-                    //System.out.println("right");
-                    moveRight();
-                    break;
-            }
-        }
-
-        @Override
-        public void keyReleased(KeyEvent e) {
-            
-        }
-        
-    }
-    
-    
-    private void drawTile(Graphics g2, Tile tile, int x, int y) {
-    Graphics2D g = ((Graphics2D) g2);
-    g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-    g.setRenderingHint(RenderingHints.KEY_STROKE_CONTROL, RenderingHints.VALUE_STROKE_NORMALIZE);
-   // int value = tile.value;
-    //int xOffset = offsetCoors(x);
-    //int yOffset = offsetCoors(y);
-    //g.setColor(tile.getBackground());
-    //g.fillRoundRect(xOffset, yOffset, TILE_SIZE, TILE_SIZE, 14, 14);
-    //g.setColor(tile.getForeground());
-    //final int size = value < 100 ? 36 : value < 1000 ? 32 : 24;
-    //final Font font = new Font(FONT_NAME, Font.BOLD, size);
-    //g.setFont(font);
-
-    //String s = String.valueOf(value);
-   // final FontMetrics fm = getFontMetrics(font);
-
-  //  final int w = fm.stringWidth(s);
-   // final int h = -(int) fm.getLineMetrics(s, g).getBaselineOffsets()[2];
-
-    //if (value != 0)
-     // g.drawString(s, xOffset + (TILE_SIZE - w) / 2, yOffset + TILE_SIZE - (TILE_SIZE - h) / 2 - 2);
-
-    if (myWin || myLose) {
-      g.setColor(new Color(255, 255, 255, 30));
-     // g.fillRect(0, 0, getWidth(), getHeight());
-      g.setColor(new Color(78, 139, 202));
-      g.setFont(new Font(FONT_NAME, Font.BOLD, 48));
-      if (myWin) {
-        g.drawString("You won!", 68, 150);
-      }
-      if (myLose) {
-        g.drawString("Game over!", 50, 130);
-        g.drawString("You lose!", 64, 200);
-      }
-      if (myWin || myLose) {
-        g.setFont(new Font(FONT_NAME, Font.PLAIN, 16));
-        g.setColor(new Color(128, 128, 128, 128));
-    //    g.drawString("Press ESC to play again", 80, getHeight() - 40);
-      }
-    }
-    g.setFont(new Font(FONT_NAME, Font.PLAIN, 18));
-    g.drawString("Score: " + myScore, 200, 365);
-
-  }
     
 }
