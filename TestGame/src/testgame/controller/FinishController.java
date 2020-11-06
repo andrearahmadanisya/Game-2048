@@ -12,7 +12,7 @@ import testgame.view.Finish;
 
 /**
  *
- * @author 62822
+ * @author Andrea Rahmadanisya
  */
 public class FinishController {
     private Finish F;
