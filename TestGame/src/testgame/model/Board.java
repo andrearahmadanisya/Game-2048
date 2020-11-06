@@ -7,7 +7,7 @@ package testgame.model;
 
 /**
  *
- * @author Atta
+ * @author Andrea Rahmadanisya
  */
 public class Board {
     private Tile[][] tile;
@@ -61,7 +61,4 @@ public class Board {
     public void setBest(int best) {
         this.best = best;
     }
-    
-    
-    
 }
