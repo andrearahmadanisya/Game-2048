@@ -14,7 +14,7 @@ import java.awt.event.MouseAdapter;
 
 /**
  *
- * @author 62822
+ * @author Andrea Rahmadanisya
  */
 public class LoginController extends MouseAdapter implements ActionListener {
     private Login login;
