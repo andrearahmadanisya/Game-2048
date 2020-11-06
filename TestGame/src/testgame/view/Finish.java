@@ -7,7 +7,7 @@ package testgame.view;
 
 /**
  *
- * @author 62822
+ * @author Andrea Rahmadanisya
  */
 public class Finish extends javax.swing.JFrame {
 
