@@ -13,7 +13,7 @@ import testgame.view.BoardUI;
 
 /**
  *
- * @author Atta
+ * @author Andrea Rahmadanisya
  */
 public class TestGame {
 
