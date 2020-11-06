@@ -7,7 +7,7 @@ package testgame;
 
 /**
  *
- * @author Atta
+ * @author Andrea Rahmadanisya
  */
 public class NewJFrame extends javax.swing.JFrame {
 
