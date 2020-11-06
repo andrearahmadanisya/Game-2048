@@ -12,7 +12,7 @@ import java.sql.Statement;
 
 /**
  *
- * @author 62822
+ * @author Andrea Rahmadanisya
  */
 public class connection {
      private Connection conn = null;
