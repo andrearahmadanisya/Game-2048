@@ -10,7 +10,7 @@ import testgame.*;
 
 /**
  *
- * @author Atta
+ * @author Andrea Rahmadanisya
  */
 public class BoardUI extends javax.swing.JFrame {
     private javax.swing.JPanel[] tileArray;
